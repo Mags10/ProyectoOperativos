@@ -30,6 +30,8 @@ namespace ProyectoOperativos
             filosofo3.Start();
             filosofo4.Start();
             filosofo5.Start();
+
+            this.button1.Enabled = false;
         }
     }
 }
