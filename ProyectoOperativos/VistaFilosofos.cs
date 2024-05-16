@@ -12,26 +12,37 @@ namespace ProyectoOperativos
 {
     public partial class VistaFilosofos : Form
     {
+        private ProblemaFilosofos problema;
+
         public VistaFilosofos()
         {
             InitializeComponent();
+            problema = new ProblemaFilosofos(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Filosofo filosofo = new Filosofo();
-            Filosofo filosofo2 = new Filosofo();
-            Filosofo filosofo3 = new Filosofo();
-            Filosofo filosofo4 = new Filosofo();
-            Filosofo filosofo5 = new Filosofo();
-
-            filosofo.Start();
-            filosofo2.Start();
-            filosofo3.Start();
-            filosofo4.Start();
-            filosofo5.Start();
-
+            problema.Start();
             this.button1.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Pause
+            problema.Suspend();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Resume
+            problema.Resume();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Stop
+            problema.Abort();
+            this.button1.Enabled = true;
         }
     }
 }

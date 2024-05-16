@@ -67,12 +67,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.Bisque;
             this.panel1.Controls.Add(this.palillo4);
             this.panel1.Controls.Add(this.palillo2);
             this.panel1.Controls.Add(this.palillo3);
@@ -93,7 +96,7 @@
             this.palillo4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.palillo4.Location = new System.Drawing.Point(19, 123);
             this.palillo4.Name = "palillo4";
-            this.palillo4.Size = new System.Drawing.Size(30, 12);
+            this.palillo4.Size = new System.Drawing.Size(30, 5);
             this.palillo4.TabIndex = 4;
             // 
             // palillo2
@@ -101,7 +104,7 @@
             this.palillo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.palillo2.Location = new System.Drawing.Point(154, 123);
             this.palillo2.Name = "palillo2";
-            this.palillo2.Size = new System.Drawing.Size(30, 12);
+            this.palillo2.Size = new System.Drawing.Size(30, 5);
             this.palillo2.TabIndex = 3;
             // 
             // palillo3
@@ -109,7 +112,7 @@
             this.palillo3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.palillo3.Location = new System.Drawing.Point(94, 153);
             this.palillo3.Name = "palillo3";
-            this.palillo3.Size = new System.Drawing.Size(12, 30);
+            this.palillo3.Size = new System.Drawing.Size(5, 30);
             this.palillo3.TabIndex = 3;
             // 
             // palillo1
@@ -117,7 +120,7 @@
             this.palillo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.palillo1.Location = new System.Drawing.Point(155, 13);
             this.palillo1.Name = "palillo1";
-            this.palillo1.Size = new System.Drawing.Size(12, 30);
+            this.palillo1.Size = new System.Drawing.Size(5, 30);
             this.palillo1.TabIndex = 3;
             // 
             // palillo0
@@ -125,7 +128,7 @@
             this.palillo0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.palillo0.Location = new System.Drawing.Point(37, 13);
             this.palillo0.Name = "palillo0";
-            this.palillo0.Size = new System.Drawing.Size(12, 30);
+            this.palillo0.Size = new System.Drawing.Size(5, 30);
             this.palillo0.TabIndex = 2;
             // 
             // panel5
@@ -170,7 +173,7 @@
             // 
             // filosofo1
             // 
-            this.filosofo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.filosofo1.BackColor = System.Drawing.Color.LightGray;
             this.filosofo1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.filosofo1.Location = new System.Drawing.Point(405, 194);
             this.filosofo1.Name = "filosofo1";
@@ -179,7 +182,7 @@
             // 
             // filosofo4
             // 
-            this.filosofo4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.filosofo4.BackColor = System.Drawing.Color.LightGray;
             this.filosofo4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.filosofo4.Location = new System.Drawing.Point(125, 194);
             this.filosofo4.Name = "filosofo4";
@@ -188,7 +191,7 @@
             // 
             // filosofo3
             // 
-            this.filosofo3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.filosofo3.BackColor = System.Drawing.Color.LightGray;
             this.filosofo3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.filosofo3.Location = new System.Drawing.Point(180, 329);
             this.filosofo3.Name = "filosofo3";
@@ -197,7 +200,7 @@
             // 
             // filosofo2
             // 
-            this.filosofo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.filosofo2.BackColor = System.Drawing.Color.LightGray;
             this.filosofo2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.filosofo2.Location = new System.Drawing.Point(350, 329);
             this.filosofo2.Name = "filosofo2";
@@ -206,7 +209,7 @@
             // 
             // filosofo0
             // 
-            this.filosofo0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.filosofo0.BackColor = System.Drawing.Color.LightGray;
             this.filosofo0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.filosofo0.Location = new System.Drawing.Point(265, 59);
             this.filosofo0.Name = "filosofo0";
@@ -215,82 +218,82 @@
             // 
             // palillo00
             // 
-            this.palillo00.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.palillo00.Location = new System.Drawing.Point(247, 71);
+            this.palillo00.BackColor = System.Drawing.Color.LightGray;
+            this.palillo00.Location = new System.Drawing.Point(254, 71);
             this.palillo00.Name = "palillo00";
-            this.palillo00.Size = new System.Drawing.Size(12, 30);
+            this.palillo00.Size = new System.Drawing.Size(5, 30);
             this.palillo00.TabIndex = 3;
             // 
             // palillo01
             // 
-            this.palillo01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.palillo01.BackColor = System.Drawing.Color.LightGray;
             this.palillo01.Location = new System.Drawing.Point(301, 71);
             this.palillo01.Name = "palillo01";
-            this.palillo01.Size = new System.Drawing.Size(12, 30);
+            this.palillo01.Size = new System.Drawing.Size(5, 30);
             this.palillo01.TabIndex = 4;
             // 
             // palillo11
             // 
-            this.palillo11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.palillo11.Location = new System.Drawing.Point(386, 176);
+            this.palillo11.BackColor = System.Drawing.Color.LightGray;
+            this.palillo11.Location = new System.Drawing.Point(386, 183);
             this.palillo11.Name = "palillo11";
-            this.palillo11.Size = new System.Drawing.Size(30, 12);
+            this.palillo11.Size = new System.Drawing.Size(30, 5);
             this.palillo11.TabIndex = 4;
             // 
             // palillo12
             // 
-            this.palillo12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.palillo12.BackColor = System.Drawing.Color.LightGray;
             this.palillo12.Location = new System.Drawing.Point(386, 230);
             this.palillo12.Name = "palillo12";
-            this.palillo12.Size = new System.Drawing.Size(30, 12);
+            this.palillo12.Size = new System.Drawing.Size(30, 5);
             this.palillo12.TabIndex = 4;
             // 
             // palillo22
             // 
-            this.palillo22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.palillo22.BackColor = System.Drawing.Color.LightGray;
             this.palillo22.Location = new System.Drawing.Point(386, 316);
             this.palillo22.Name = "palillo22";
-            this.palillo22.Size = new System.Drawing.Size(12, 30);
+            this.palillo22.Size = new System.Drawing.Size(5, 30);
             this.palillo22.TabIndex = 6;
             // 
             // palillo23
             // 
-            this.palillo23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.palillo23.Location = new System.Drawing.Point(332, 316);
+            this.palillo23.BackColor = System.Drawing.Color.LightGray;
+            this.palillo23.Location = new System.Drawing.Point(339, 316);
             this.palillo23.Name = "palillo23";
-            this.palillo23.Size = new System.Drawing.Size(12, 30);
+            this.palillo23.Size = new System.Drawing.Size(5, 30);
             this.palillo23.TabIndex = 5;
             // 
             // palillo33
             // 
-            this.palillo33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.palillo33.BackColor = System.Drawing.Color.LightGray;
             this.palillo33.Location = new System.Drawing.Point(216, 316);
             this.palillo33.Name = "palillo33";
-            this.palillo33.Size = new System.Drawing.Size(12, 30);
+            this.palillo33.Size = new System.Drawing.Size(5, 30);
             this.palillo33.TabIndex = 8;
             // 
             // palillo34
             // 
-            this.palillo34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.palillo34.Location = new System.Drawing.Point(162, 316);
+            this.palillo34.BackColor = System.Drawing.Color.LightGray;
+            this.palillo34.Location = new System.Drawing.Point(169, 316);
             this.palillo34.Name = "palillo34";
-            this.palillo34.Size = new System.Drawing.Size(12, 30);
+            this.palillo34.Size = new System.Drawing.Size(5, 30);
             this.palillo34.TabIndex = 7;
             // 
             // palillo44
             // 
-            this.palillo44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.palillo44.BackColor = System.Drawing.Color.LightGray;
             this.palillo44.Location = new System.Drawing.Point(144, 230);
             this.palillo44.Name = "palillo44";
-            this.palillo44.Size = new System.Drawing.Size(30, 12);
+            this.palillo44.Size = new System.Drawing.Size(30, 5);
             this.palillo44.TabIndex = 5;
             // 
             // palillo40
             // 
-            this.palillo40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.palillo40.Location = new System.Drawing.Point(144, 176);
+            this.palillo40.BackColor = System.Drawing.Color.LightGray;
+            this.palillo40.Location = new System.Drawing.Point(144, 183);
             this.palillo40.Name = "palillo40";
-            this.palillo40.Size = new System.Drawing.Size(30, 12);
+            this.palillo40.Size = new System.Drawing.Size(30, 5);
             this.palillo40.TabIndex = 6;
             // 
             // label1
@@ -405,11 +408,45 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "Arroz";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(471, 37);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Pausar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(471, 62);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Reanudar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(471, 90);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "Terminar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // VistaFilosofos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(558, 450);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel11);
@@ -488,5 +525,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

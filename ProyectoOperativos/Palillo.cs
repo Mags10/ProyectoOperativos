@@ -11,41 +11,31 @@ namespace ProyectoOperativos
     public class Palillo
     {
         public int Id { get; }
-        private static int contador = 0;
-        public static VistaFilosofos vista;
+        public int minSleep { get; set; } = 1000;
+        public int maxSleep { get; set; } = 2000;
+
         private Panel palilloView;
         private Semaphore semaforo = new Semaphore(1, 1);
 
-        public Palillo()
+        public Palillo(int id, VistaFilosofos vista)
         {
-            this.Id = contador++;
+            this.Id = id;
             palilloView = vista.Controls.Find("palillo" + Id, true).FirstOrDefault() as Panel;
-            palilloView.BackColor = System.Drawing.Color.FromArgb(255, 0, 0, 0);
-            //semaforo.Release();
+            palilloView.BackColor = System.Drawing.Color.Black;
         }
 
         public void Tomar()
         {
             semaforo.WaitOne();
-            randomSleep();
-            palilloView.BackColor = System.Drawing.Color.FromArgb(255, 255, 224, 192);
+            RandomValues.RandomSleep(minSleep, maxSleep);
+            palilloView.BackColor = System.Drawing.Color.Bisque;
         }
 
         public void Soltar()
         {
-            palilloView.BackColor = System.Drawing.Color.FromArgb(255, 0, 0, 0);
-            randomSleep();
+            palilloView.BackColor = System.Drawing.Color.Black;
+            RandomValues.RandomSleep(minSleep, maxSleep);
             semaforo.Release();
-        }
-
-        private void randomSleep()
-        {
-            Thread.Sleep(randomInt(1000, 2000));
-        }
-        private int randomInt(int min, int max)
-        {
-            Random r = new Random();
-            return r.Next(min, max);
         }
     }
 }

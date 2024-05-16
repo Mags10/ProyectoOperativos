@@ -19,13 +19,14 @@ namespace ProyectoOperativos
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
 
-            Filosofo.vista = new VistaFilosofos();
             // Se crea un hilo para formulario de vista y mostrarlo
             Thread hilo = new Thread(() =>
             {
-                Application.Run(Filosofo.vista);
+                VistaFilosofos vista = new VistaFilosofos();
+                Application.Run(vista);
             });
             hilo.Start();
+
         }
     }
 }
