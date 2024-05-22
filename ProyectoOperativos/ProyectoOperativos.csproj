@@ -46,14 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Filosofo.cs" />
-    <Compile Include="Palillo.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Clases\Filosofo.cs" />
+    <Compile Include="Clases\Palillo.cs" />
+    <Compile Include="Clases\ProblemaFilosofos.cs" />
+    <Compile Include="Clases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VistaFilosofos.cs">
+    <Compile Include="Clases\RandomValues.cs" />
+    <Compile Include="Vistas\VistaFilosofos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VistaFilosofos.Designer.cs">
+    <Compile Include="Vistas\VistaFilosofos.Designer.cs">
       <DependentUpon>VistaFilosofos.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -65,10 +67,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VistaFilosofos.resx">
+    <EmbeddedResource Include="Vistas\VistaFilosofos.resx">
       <DependentUpon>VistaFilosofos.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
