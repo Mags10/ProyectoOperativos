@@ -11,8 +11,8 @@ namespace ProyectoOperativos
     public class Palillo
     {
         public int Id { get; }
-        public int minSleep { get; set; } = 1000;
-        public int maxSleep { get; set; } = 2000;
+        public int minSleep { get; set; } = 500;
+        public int maxSleep { get; set; } = 1500;
 
         private Panel palilloView;
         private Semaphore semaforo = new Semaphore(1, 1);

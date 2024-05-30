@@ -12,11 +12,18 @@ namespace ProyectoOperativos
         private List<Palillo> palillos = null;
         private List<Filosofo> filosofos = null;
         private bool initialized = false;
+        private bool running = false;
+        private bool paused = false;
+        private int behaviour = 3;
 
         private int minSleepFilosofo = 2000;
         private int maxSleepFilosofo = 5000;
         private int minSleepPalillo = 1000;
         private int maxSleepPalillo = 2000;
+
+        // Getters and Setters
+        public bool Running { get => running; }
+        public bool Paused { get => paused; }
 
         public ProblemaFilosofos(VistaFilosofos vista)
         {
@@ -38,6 +45,7 @@ namespace ProyectoOperativos
                 palillos[i].maxSleep = maxSleepPalillo;
                 filosofos[i].minSleep = minSleepFilosofo;
                 filosofos[i].maxSleep = maxSleepFilosofo;
+                filosofos[i].SetBehaviour(behaviour);
             }
         }
 
@@ -45,6 +53,7 @@ namespace ProyectoOperativos
         {
             minSleepFilosofo = min;
             maxSleepFilosofo = max;
+            if (!initialized) return;
             foreach (Filosofo f in filosofos)
             {
                 f.minSleep = minSleepFilosofo;
@@ -67,24 +76,45 @@ namespace ProyectoOperativos
         {
             if (!initialized) Initialize();
             foreach (Filosofo f in filosofos) f.Start();
+            this.initialized = true;
+            this.running = true;
+            this.paused = false;
         }
 
+        [Obsolete]
         public void Suspend()
         {
             foreach (Filosofo f in filosofos) f.Suspend();
+            this.paused = true;
+            this.running = false;
         }
 
+        [Obsolete]
         public void Resume()
         {
             foreach (Filosofo f in filosofos) f.Resume();
+            this.paused = false;
+            this.running = true;
         }
 
+        [Obsolete]
         public void Abort()
         {
+            if (!initialized) return;
             foreach (Filosofo f in filosofos) f.Abort();
             palillos = null;
             filosofos = null;
             initialized = false;
+            running = false;
+            paused = false;
+        }
+
+        [Obsolete]
+        public void ChangeBehaviour(int behaviour)
+        {
+            this.behaviour = behaviour;
+            if (!initialized) return;
+            foreach (Filosofo f in filosofos) f.SetBehaviour(behaviour);
         }
     }
 }
