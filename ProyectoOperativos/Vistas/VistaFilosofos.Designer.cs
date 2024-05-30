@@ -633,15 +633,17 @@
             // 
             this.descripciónToolStripMenuItem.Image = global::ProyectoOperativos.Properties.Resources.InfoTipInline_11_11;
             this.descripciónToolStripMenuItem.Name = "descripciónToolStripMenuItem";
-            this.descripciónToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.descripciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.descripciónToolStripMenuItem.Text = "Descripción";
+            this.descripciónToolStripMenuItem.Click += new System.EventHandler(this.descripciónToolStripMenuItem_Click);
             // 
             // desarrolladorToolStripMenuItem
             // 
             this.desarrolladorToolStripMenuItem.Image = global::ProyectoOperativos.Properties.Resources.AccountAttribute;
             this.desarrolladorToolStripMenuItem.Name = "desarrolladorToolStripMenuItem";
-            this.desarrolladorToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.desarrolladorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.desarrolladorToolStripMenuItem.Text = "Desarrollador";
+            this.desarrolladorToolStripMenuItem.Click += new System.EventHandler(this.desarrolladorToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 

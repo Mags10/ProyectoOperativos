@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoOperativos.Vistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -318,5 +319,16 @@ namespace ProyectoOperativos
             label?.Invoke(new Action(() => label.Text = state));
         }
 
+        private void descripciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Descripcion descripcion = new Descripcion();
+            descripcion.ShowDialog();
+        }
+
+        private void desarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Creditos en messagebox
+            MessageBox.Show("Desarrollado por:\n - Miguel Gutiérrez", "Créditos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

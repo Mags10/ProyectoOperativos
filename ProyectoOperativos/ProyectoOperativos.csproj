@@ -60,6 +60,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>UserFeedback.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,6 +88,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Descripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Descripcion.Designer.cs">
+      <DependentUpon>Descripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\VistaFilosofos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +104,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Descripcion.resx">
+      <DependentUpon>Descripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\VistaFilosofos.resx">
       <DependentUpon>VistaFilosofos.cs</DependentUpon>
@@ -169,6 +181,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserFeedback.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
