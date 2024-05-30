@@ -126,5 +126,8 @@
   <ItemGroup>
     <None Include="Resources\CheckBoxChecked.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserFeedback.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

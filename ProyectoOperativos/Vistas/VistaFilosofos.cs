@@ -64,20 +64,31 @@ namespace ProyectoOperativos
 
         private void rebootSreen()
         {
+            label21.Text = "...";
+            label22.Text = "...";
+            label23.Text = "...";
+            label24.Text = "...";
+            label25.Text = "...";
             richTextBox1.Clear();
             toolStripButton1.Image = Properties.Resources.Play;
             toolStripButton1.Text = "Iniciar simulación";
             iniciarToolStripMenuItem.Image = Properties.Resources.Play;
             iniciarToolStripMenuItem.Text = "Iniciar";
             statusLabel.Text = "Aplicación lista para iniciar simulación";
-            foreach (Panel plt in panel13.Controls)
+            foreach (Control c in panel13.Controls)
             {
-                if (plt.Name.Contains("palillo")) plt.BackColor = SystemColors.Control;
-                else if (plt.Name.Contains("filosofo")) plt.BackColor = Color.LightGray;
+                if (c is Panel)
+                {
+                    if (c.Name.Contains("palillo")) c.BackColor = SystemColors.Control;
+                    else if (c.Name.Contains("filosofo")) c.BackColor = Color.LightGray;
+                }
             }
-            foreach (Panel plt in panel1.Controls)
+            foreach (Control c in panel1.Controls)
             {
-                if (plt.Name.Contains("palillo")) plt.BackColor = Color.Black;
+                if (c is Panel)
+                {
+                    if (c.Name.Contains("palillo")) c.BackColor = Color.Black;
+                }
             }
 
         }
@@ -276,5 +287,36 @@ namespace ProyectoOperativos
             changeFilosofoSleep();
             changePalilloSleep();
         }
+
+        private void VistaFilosofos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            problema.Abort();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            label16.Visible = checkBox1.Checked;
+            label17.Visible = checkBox1.Checked;
+            label18.Visible = checkBox1.Checked;
+            label19.Visible = checkBox1.Checked;
+            label20.Visible = checkBox1.Checked;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            label21.Visible = checkBox2.Checked;
+            label22.Visible = checkBox2.Checked;
+            label23.Visible = checkBox2.Checked;
+            label24.Visible = checkBox2.Checked;
+            label25.Visible = checkBox2.Checked;
+        }
+
+        public void setLabelState(int id, string state)
+        {
+            string labelname = "label" + (id + 21).ToString();
+            Label label = this.Controls.Find(labelname, true).FirstOrDefault() as Label;
+            label?.Invoke(new Action(() => label.Text = state));
+        }
+
     }
 }

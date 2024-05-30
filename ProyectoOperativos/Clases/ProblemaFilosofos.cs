@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoOperativos
 {
+    [Obsolete]
     public class ProblemaFilosofos
     {
         private VistaFilosofos vista;

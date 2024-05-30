@@ -79,6 +79,7 @@ namespace ProyectoOperativos
                     filosofoView.BackColor = System.Drawing.Color.LightCoral;
                     // Hambriento
                     vista.logUpdate("Filosofo " + Id + " está hambriento");
+                    vista.setLabelState(Id, "Hambriento");
                     // Se revisa el Id del filosofo para tomar los palillos en orden
                     // Si el Id es par, toma el palillo izquierdo primero
                     // Si el Id es impar, toma el palillo derecho primero
@@ -121,9 +122,11 @@ namespace ProyectoOperativos
                     }
                     filosofoView.BackColor = System.Drawing.Color.Red;
                     vista.logUpdate("Filósofo " + Id + " empezó a comer");
+                    vista.setLabelState(Id, "Comiendo");
                     RandomValues.RandomSleep(minSleep, maxSleep);
                     filosofoView.BackColor = System.Drawing.Color.LightGray;
                     vista.logUpdate("Filósofo " + Id + " terminó de comer");
+                    vista.setLabelState(Id, "...");
 
                     dejaIzquierdo();
                     dejaDerecho();
@@ -132,6 +135,7 @@ namespace ProyectoOperativos
                 {
                     filosofoView.BackColor = System.Drawing.Color.LightBlue;
                     vista.logUpdate("Filósofo " + Id + " pensando");
+                    vista.setLabelState(Id, "Pensando");
                     RandomValues.RandomSleep(minSleep, maxSleep);
                 }
             }

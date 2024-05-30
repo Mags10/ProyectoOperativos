@@ -179,5 +179,15 @@ namespace ProyectoOperativos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon UserFeedback {
+            get {
+                object obj = ResourceManager.GetObject("UserFeedback", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
